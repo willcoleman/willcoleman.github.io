@@ -19,6 +19,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $(".targettop").on('click', function(event) {
+
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+
+  
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
       
 </head>
     
@@ -347,7 +374,9 @@
         
     }
     
-
+    #topscreen{
+     display: none;   
+    }
     
 
     
@@ -629,6 +658,20 @@
         color: white;
         text-decoration: none;
     }
+            
+            .scrolltop{ 
+            position: fixed;
+            top: 90%;
+            left: 1%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            }
+            
+            .targettop{
+                color: gray;
+                text-decoration: none;
+            }
             
             
         }
@@ -1264,7 +1307,9 @@
         
         
         
-<!-- MOBILE -->     
+<!-- MOBILE -->   
+        
+    <div id = "topscreen"></div>
         
         
         
@@ -1285,6 +1330,12 @@
 </ul>
     
 </div>
+        
+    <div id = "scrolltotopbtnwrap">
+        
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        
+    </div><!--scrolltotopbtnwrap-->
         
         
 <div class = "ydwrapper2">
