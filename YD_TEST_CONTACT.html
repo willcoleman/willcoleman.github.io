@@ -21,6 +21,33 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $(".targettop").on('click', function(event) {
+
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+
+  
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    
 
     
     
@@ -454,7 +481,10 @@ input, label {
     
     
 
-
+    
+    #topscreen{
+     display: none;   
+    }
     
 
 
@@ -870,6 +900,20 @@ input, label {
         color: white;
         text-decoration: none;
     }
+    
+    .scrolltop{ 
+            position: fixed;
+            top: 90%;
+            left: 1%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            }
+            
+            .targettop{
+                color: gray;
+                text-decoration: none;
+            }
     
     } /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
     
@@ -1485,7 +1529,12 @@ Fields marked with an <font color = "red">*</font> are required.
     
 </div><!--end desktopwrap-->
     
+<div id = "topscreen"></div>
+    
+
+    
 <!--tablet and phone begin--><div class = "mobilewrap">
+    
     
 <div class = "navwrapper2">
 <ul class = "nav2">
@@ -1500,6 +1549,13 @@ Fields marked with an <font color = "red">*</font> are required.
 </ul>
     
 </div><!--navwrapper2-->
+    
+
+<div id = "scrolltotopbtnwrap">
+        
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        
+    </div><!--scrolltotopbtnwrap-->
     
     
 <div class = "row" id = "links">
