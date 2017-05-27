@@ -17,6 +17,34 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $(".targettop").on('click', function(event) {
+
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+
+  
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -544,6 +572,7 @@ $(document).ready(function(){
         display:none;
         padding-top: 35%;
         width: 100%;
+        color: white;
     }
     
     .prevpic1{
@@ -553,6 +582,7 @@ $(document).ready(function(){
     
     .prevhead2{
         display:none;
+        color: white;
         font-size: 25;
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
@@ -636,6 +666,11 @@ $(document).ready(function(){
     
     #hequadwrapper{
         padding-top: 10px;
+    }
+    
+    
+    #topscreen{
+     display: none;   
     }
     
     }/*END DESKTOP CSS*/
@@ -1152,6 +1187,7 @@ $(document).ready(function(){
     
     .prevhead2{
         display: block;
+        color: white;
         font-size: 25;
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
@@ -1174,6 +1210,30 @@ $(document).ready(function(){
         color: gainsboro;
         color: white;
         text-decoration: none;
+    }
+    
+    .fa-dollar, .fa-list-alt, .fa-briefcase, .fa-envelope{
+        color: white;
+        padding-top: 35px;
+        font-size: 35;
+    }
+    
+    .scrolltop{ 
+            position: fixed;
+            top: 90%;
+            left: 0.5%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            }
+            
+            .targettop{
+                color: gray;
+                text-decoration: none;
+            }
+    
+    .fa-caret-up:hover{
+        opacity: 0.5;
     }
 
 
@@ -1417,6 +1477,12 @@ $(document).ready(function(){
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
     }
+                    
+        .fa-dollar, .fa-list-alt, .fa-briefcase, .fa-envelope{
+        color: white;
+        padding-top: 35px;
+        font-size: 35;
+    }
             
                     
     }/*END MED TABLET CSS*/
@@ -1642,6 +1708,12 @@ $(document).ready(function(){
         font-size: 15;
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
+    }
+            
+                .fa-dollar, .fa-list-alt, .fa-briefcase, .fa-envelope{
+        color: white;
+        padding-top: 35px;
+        font-size: 35;
     }
                     
             
@@ -1869,6 +1941,8 @@ $(document).ready(function(){
     
 </div><!--end desktopwrap-->
     
+<div id = "topscreen"></div>
+    
 <!--tablet and phone begin--><div class = "mobilewrap">
     
 <div class = "row" id = "header">
@@ -1912,6 +1986,12 @@ $(document).ready(function(){
   <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a></li> 
     </center>
 </ul>
+    
+<div id = "scrolltotopbtnwrap">
+        
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        
+    </div><!--scrolltotopbtnwrap-->
     
 </div><!--navwrapper2-->
         
@@ -2070,7 +2150,7 @@ $(document).ready(function(){
     
 <div class = "col-6 contact">
     
-    <a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">
+    <a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">
 
 <div class = "prevhead1">What are we about?</div>
     
@@ -2089,7 +2169,7 @@ $(document).ready(function(){
     
 <div class = "col-6 company">
     
-<a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">
+<a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">
     
 <div class = "prevhead1">Have questions?</div>
     
