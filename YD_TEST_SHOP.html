@@ -17,6 +17,34 @@
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $(".targettop").on('click', function(event) {
+
+  
+    if (this.hash !== "1") {
+ 
+      event.preventDefault();
+
+  
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -781,6 +809,11 @@ $(document).ready(function(){
         color: white;
         text-decoration: none;
     }
+    
+    
+    #topscreen{
+     display: none;   
+    }
                     
     
 
@@ -1265,6 +1298,20 @@ $(document).ready(function(){
         color: white;
         text-decoration: none;
     }
+    
+    .scrolltop{ 
+            position: fixed;
+            top: 90%;
+            left: 0.5%;
+            z-index: 100;
+            color: gray;
+            opacity: 0.75;
+            }
+            
+            .targettop{
+                color: gray;
+                text-decoration: none;
+            }
 
     
 
@@ -2265,6 +2312,8 @@ $(document).ready(function(){
     
 </div><!--end desktopwrap-->
     
+<div id = "topscreen"></div>
+    
 <!--tablet and phone begin--><div class = "mobilewrap">
     
 <div class = "navwrapper2">
@@ -2280,6 +2329,12 @@ $(document).ready(function(){
 </ul>
     
 </div><!--navwrapper2-->
+    
+<div id = "scrolltotopbtnwrap">
+        
+        <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
+        
+    </div><!--scrolltotopbtnwrap-->
     
     
 <div class = "row" id = "shoppingcart">
