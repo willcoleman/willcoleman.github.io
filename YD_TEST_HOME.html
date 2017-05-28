@@ -295,40 +295,119 @@ $(document).ready(function(){
         font-family: 'Russo One', sans-serif;
         text-shadow:5px 5px 10px black;
         z-index: -1;
+        opacity: 0;
+        -webkit-animation-name: h1; 
+        -webkit-animation-duration: 4s; 
+        animation-name: h1;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        
     }
+    
+
+@-webkit-keyframes h1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@keyframes h1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
     
     .h2{
         width: 100%;
         font-size: 25;
-        padding-bottom: 325px;
+        padding-bottom: 3%;
         font-family: 'Russo One', sans-serif;
         text-shadow:5px 5px 10px black;
         z-index: -1;
+        opacity: 0;
+        -webkit-animation-name: h2; 
+        -webkit-animation-duration: 4s; 
+        animation-name: h2;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
     
+    @-webkit-keyframes h2 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@keyframes h2 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+    
+    .headpic,{
+        width: 100%;
+
+        
+    }
+    
+    .headimg{
+        padding-bottom: 10%;
+        opacity: 0;
+        -webkit-animation-name: headpic; 
+        -webkit-animation-duration: 4s; 
+        animation-name: headpic;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @-webkit-keyframes headpic {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@keyframes headpic {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+    
     .scroldowndesk{
+        width: 100%;
         padding-top: 15%;
-        opacity: 0.5;
+        
         
     }
     
     .scrollbtn{
-        opacity: 0.4;
-   transition: opacity .3s ease-in-out;
-   -moz-transition: opacity .3s ease-in-out;
-   -webkit-transition: opacity .3s ease-in-out;
+        opacity: 0;
+        -webkit-animation-name: scrollbtn; 
+        -webkit-animation-duration: 4s; 
+        animation-name: scrollbtn;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
     }
     
     .scrollbtn:hover{
         opacity: 1.0;
         cursor: pointer;
     }
+    
+        @-webkit-keyframes scrollbtn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@keyframes scrollbtn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
         
 
     
     #header{
-        background: url("http://i1174.photobucket.com/albums/r610/willcoleman123/bg4.0_zpsfaihoia4.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -873,8 +952,7 @@ $(document).ready(function(){
     .h1{
         width: 100%;
         font-size: 25;
-        padding-top: 20%;
-        
+        padding-top: 15%;
         padding-bottom: 2.5%;
         font-family: 'Russo One', sans-serif;
         text-shadow:5px 5px 10px black;
@@ -884,7 +962,7 @@ $(document).ready(function(){
     .h2{
         width: 100%;
         font-size: 25;
-        padding-bottom: 250px;
+        padding-bottom: 2%;
         font-family: 'Russo One', sans-serif;
         text-shadow:5px 5px 10px black;
         z-index: -1;
@@ -912,7 +990,7 @@ $(document).ready(function(){
 
     
     #header{
-        background: url("http://i1174.photobucket.com/albums/r610/willcoleman123/bg4.0_zpsfaihoia4.png");
+        
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1235,6 +1313,10 @@ $(document).ready(function(){
     .fa-caret-up:hover{
         opacity: 0.5;
     }
+    
+    .headimg{
+        padding-bottom: 15%;
+    }
 
 
 
@@ -1259,6 +1341,8 @@ $(document).ready(function(){
                      .navwrapper {
                 display: none;
             }
+                    
+     
             
     .nav2 {
     list-style-type: none;
@@ -1449,7 +1533,7 @@ $(document).ready(function(){
     }
                     
       .h78head{
-                font-size: 30;
+        font-size: 30;
             }
                     
         .prevhead1{
@@ -1483,6 +1567,10 @@ $(document).ready(function(){
         padding-top: 35px;
         font-size: 35;
     }
+                    
+                    .headimg{
+                        width: 50%;
+                    }
             
                     
     }/*END MED TABLET CSS*/
@@ -1511,6 +1599,11 @@ $(document).ready(function(){
             }
              .navwrapper {
                 display: none;
+            }
+            
+            .headimg{
+                width: 80%;
+                padding-bottom: 50%;
             }
             
     .nav2 {
@@ -1674,13 +1767,15 @@ $(document).ready(function(){
     }
             
             .h1{
-                padding-top: 25%;
+                padding-top: 20%;
+                padding-bottom: 5%;
                 font-size: 20;
             }
             
             .h2{
+                padding-bottom: 8%;
                 font-size:15;
-                padding-bottom: 70%;
+                
                 
             }
             
@@ -1737,6 +1832,8 @@ $(document).ready(function(){
 <div class = "h1">Purposely Designed from the ground up for the Mission</div> 
     
 <div class = "h2">Over 40 years of agriculture aircraft design and manufacturing</div>    
+    
+<div class = "headpic"><img class = "headimg" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png"></div>
     
 <a class = "target" href = "#nav">    
 
@@ -1951,7 +2048,9 @@ $(document).ready(function(){
     
 <div class = "h1">Purposely Designed from the ground up for the Mission</div> 
     
-<div class = "h2">Over 40 years of agriculture aircraft design and manufacturing</div>    
+<div class = "h2">Over 40 years of agriculture aircraft design and manufacturing</div> 
+    
+<div class = "headpic"><img class = "headimg" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png"></div>
     
 <a class = "target2" href = "#nav2">    
 
