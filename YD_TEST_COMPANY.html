@@ -1,40 +1,35 @@
 <!DOCTYPE>
-
 <html>
 
 <head>
-  
-<title>COMPANY PG BETA</title>
     
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     
-     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-
   $(".targettop").on('click', function(event) {
-
   
     if (this.hash !== "1") {
  
       event.preventDefault();
-
   
       var hash = this.hash;
-
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 1500, function(){
@@ -46,24 +41,32 @@ $(document).ready(function(){
   });
 });
 </script>
-      
-</head>
-    
-    <style>
-        
-        /*!!!!!!!!!!BEGIN DESKTOP CSS!!!!!!!!!!*/
     
 
+    
+    
+    
+</head>    
+
+
+    
+<style>
+    
+ /*!!!!!!!!!!BEGIN DESKTOP CSS!!!!!!!!!!*/
+    
             
-        * {
+       * {
     box-sizing: border-box;
 }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
         
 @media only screen and (min-width: 900px) {
     .col-1 {width: 8.33%;}
@@ -81,35 +84,18 @@ $(document).ready(function(){
     
     body {
         margin: 0;
+        overflow-x: hidden;
     }
     
     .navwrapper2 {
         display:none;
     }
     
-    .ydwrapper2 {
-        display: none;
-    }
-    
-    .atwrapper2 {
+    .navwrapper2 {
         display:none;
     }
     
-    .whwrapper2 {
-        display: none;
-    }
-    
-    .footer2 {
-        display: none;
-    }
-        #nav{
-        position: fixed;
-        width: 100%;
-    }
-    
-
-        
-     .navigation {
+  .navigation {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -118,8 +104,8 @@ $(document).ready(function(){
     text-align: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
-
 .navigation a {
     float: left;
     color: white;
@@ -146,97 +132,12 @@ $(document).ready(function(){
         padding-bottom: 8%;
     }
         
-        #active {
+                #active {
             background-color: #b1b1b1;
             height: 100%;
         }
     
-        .ydcn {
-        float: left;
-        text-align: center;
-        padding-left: 10%;
-    }
-    
-    .ydimg {
-        float: left;
-        padding-left: 10%;
-    }
-    #ydcontent {
-        padding-top: 7%;
-        
-    }
-    
-        .ydhead {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-    
-    .ydpg {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-           .atcn {
-        float: left;
-        text-align: center;
-        padding-left: 10%;
-    }
-    
-    .atlogo{
-        vertical-align: middle;
-    }
-    
-    .atimg {
-        float: left;
-        padding-left: 10%;
-    }
-
-    
-        .athead {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        padding-top: 4%;
-    }
-    
-    .atpg {
-        font-family: 'PT Sans', sans-serif;
-        
-    }
-    
-    .atwrapper {
-        padding-top: 27%;
-    }
-    
-                 .whcn {
-        float: left;
-        text-align: center;
-        padding-left: 10%;
-    }
-    
-    .whimg {
-        float: left;
-        padding-left: 10%;
-    }
-    #whcontent {
-        padding-top: 14%;
-    }
-    
-        .whhead {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-    
-    .whpg {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    .whwrapper {
-        padding-left: 12.5%;
-        padding-bottom: 10%;
-    }
-    
-        .footer {
+                        .footer {
          background-color: black;
          background-size: cover;
          background-position: center;
@@ -244,76 +145,9 @@ $(document).ready(function(){
          width: 100%;
          text-align: center;
          color: white;
+         font-family: 'Droid Sans', sans-serif;
          margin: 0 0 0 0;
         
-    } 
-        
-    .atfootlogo {
-        padding-top: 1.5%;
-        float: left;
-        padding-left: 2%;
-        padding-bottom: 1%;
-    }
-    
-    .ydfootlogo {
-        padding-top: 1.5%;
-        padding-right: 2%;
-        padding-bottom: 1%;
-        float: right;
-    }
-    
-    .footercontent { 
-        position: absolute;
-        left:50%;
-        padding-top: 2%;
-        height: 200px;
-        width: 400px;
-        margin-left: -200px;
-    }
-    
-    .fa {
-    padding: 1%;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-    .fa:hover {
-    opacity: 0.7;
-    }
-
-    .fa-facebook {
-  background-color: black;
-  color: white;
-    }
-
-    .fa-twitter {
-  background-color: black;
-  color: white;
-    }
-    
-    .fa-instagram {
-  background-color: black;
-  color: white;
-        
-    }
-    
-    .fa-youtube {
-    background-color: black;
-    color: white;
-        
-    }
-    
-                .footer {
-         background-color: black;
-         background-size: cover;
-         background-position: center;
-         position: absolute;
-         width: 100%;
-         text-align: center;
-         color: white;
-         margin: 0 0 0 0;
         
     } 
         
@@ -340,49 +174,284 @@ $(document).ready(function(){
         margin-left: -200px;
     }
     
-    .fa {
+    .smlinks {
     padding: 1%;
     font-size: 30px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
   }
-
-    .fa:hover {
+    .fa-facebook:hover {
     opacity: 0.7;
     }
-
+    
+    .fa-twitter:hover{
+        opacity: 0.7;
+    }
+    
+    .fa-instagram:hover{
+        opacity: 0.7;
+    }
+    
+    .fa-youtube:hover{
+        opacity: 0.7;
+    }
+    
     .fa-facebook {
   background-color: black;
   color: white;
+        text-decoration: none;
     }
-
     .fa-twitter {
   background-color: black;
   color: white;
+        text-decoration: none;
     }
     
     .fa-instagram {
   background-color: black;
   color: white;
+        text-decoration: none;
         
     }
     
     .fa-youtube {
     background-color: black;
     color: white;
+    text-decoration: none;
         
     }
     
-    #topscreen{
-     display: none;   
+    .mobilewrap{
+        display:none;
     }
     
-
+    #supportandform{
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    
+    .links{
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+    }
+    
+    .btnhead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25;
+    }
+    
+    .supporthead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30;
+    }
+    
+    .supportcn{
+        width: 100%;
+        font-size: 18;
+        color: gray;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+    
+    .button1 {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family: 'PT Sans', sans-serif;
+}
+    
+    .button1 a {
+        text-decoration: none;
+}
+    
+    a:visited {
+        color: white;
+        text-decoration: none;
+}
+    
+    .button1:hover {
+        opacity: 0.5;        
+}
+    
+    .form{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+    }
+    
+    .formhead{
+        text-align: center;
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30;   
+    }
+    
+    .formcn{
+        text-align: center;
+        width: 100%;
+        font-size: 18;
+        color: gray;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+    
+    .contactus{
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40;  
+    }
+    
+    .preform{
+        width: 100%;
+        font-size: 18;
+        color: gray;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
     
     
-
-.footerhead{
+    
+        .qanda{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+    }
+    
+    #faq{
+        padding-bottom: 10%;
+    }
+    
+        .faqhead{
+        font-size: 40;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .question{
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    
+    .answer{
+        font-family: 'Merriweather', serif;
+        color: #4e4c4c
+        
+    }
+    
+    .tips{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+    }
+    
+        
+.AOThead {
+        font-size: 30;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .AOTcn{
+        font-family: 'Merriweather', serif;
+        color: #4e4c4c}
+    
+    
+       #aot{
+        padding-bottom: 10%;
+    }
+    
+        #nav{
+        position: fixed;
+        width: 100%;
+        
+    }
+    
+    .links{
+        position: relative;
+        padding-top: 15%;
+    }
+    
+input, label {
+    display:block;
+}
+    
+    label{
+        font-weight: bold;
+        font-size: 18;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    .name-first, .name-last, .residing-country, .residing-state, .phone-number, .email-address, .subject-content, .message-content{
+        float: left;
+        margin-right: 2%;
+        padding-bottom: 3%;
+    }
+    
+    
+    #message{
+        width: 100%;
+        padding-bottom: 20%;
+        margin-right: 350px;
+        width: 100%;
+    }
+    
+    #subject{
+        width: 100%;
+        margin-right: 350px;
+        width: 100%;  
+    }
+    
+    .send{
+        width: 50%;
+        text-align: center;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        border-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16;
+        margin-left: 20%;
+        height: 30px;
+  
+    }
+    
+    .send:hover{
+        opacity: 0.5;
+        cursor: pointer;
+        
+        
+        
+    }
+    
+    .button1 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footerhead{
             font-family: 'Ubuntu', sans-serif;
         font-weight: bolder;
     }
@@ -394,41 +463,62 @@ $(document).ready(function(){
         color: white;
         text-decoration: none;
     }
+    
+    
+    
+    #topscreen{
+     display: none;   
+    }
+    
         
-        }
+    }/*END DESKTOP CSS*/
+    
+    
+    /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
         
-        /*!!!!!!!!!!END DESKTOP CSS!!!!!!!!!!*/
+         * {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
         
-        
-        /*!!!!!!!!!!BEGIN LARGE TABLET CSS!!!!!!!!!!*/
-        
-        @media only screen and (max-width: 900px) {
-            
-
-
-            .navwrapper {
-                display: none;
-            }
-            
-            .ydwrapper {
-                display: none;
-            }
-            
-            .whwrapper {
-                display: none;
-            }
-            
-            .footer {
-                display: none;
-            }
-
+@media only screen and (max-width: 900px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
     body {
         margin: 0;
-        overflow-x: hidden;
-
+        overflow-x: none;
+        
+        
     }
-            
-            .navwrapper {
+    
+    .navwrapper{
+        display: none;
+    }
+    
+            .desktopwrap {
+                display: none;
+            }
+    
+    .navwrapper {
                 display: none;
             }
             
@@ -439,7 +529,6 @@ $(document).ready(function(){
     background-color: #383838;
     width: 100%;
 }
-
 .navbar2 a {
     font-family: 'Oswald', sans-serif;
     display: block;
@@ -448,8 +537,6 @@ $(document).ready(function(){
     text-decoration: none;
     text-align: center;
 }
-
-
 .navbar2 a:hover {
         background-color: black;
 }
@@ -481,95 +568,8 @@ $(document).ready(function(){
         text-decoration: none;
         color: white;
     }
-              .ydcn2 {
-        text-align: center;
-    }
     
-            .ydwrapper2 {
-                width: 80%;
-                margin: auto;
-                padding-top: 7%;
-            }
-
-            
-            
-    #ydcontent2 {
-        padding-top: 7%;
-    }
-    
-        .ydhead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-            
-            .atwrapper2 {
-                width: 80%;
-                margin: auto;
-                padding-top: 7%;
-            }
-    
-    .ydpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    img.midyd {
-    vertical-align: middle;
-}  
-            
-               .atcn2 {
-        text-align: center;
-    }
-    
-
-    #atcontent2 {
-        padding-top: 7%;
-    }
-    
-        .athead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-        
-    }
-    
-    .atpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    img.midat {
-    vertical-align: middle;
-    
-}
-            
-        .whcn2 {
-        float: left;
-        text-align: center;
-        margin-left: 15%;
-    }
-    
-
-    #whcontent2 {
-        padding-top: 7%;
-    }
-    
-        .whhead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-    
-    .whpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    .whwrapper2 {
-        width: 85%;
-        padding-top: 7%;
-        padding-bottom: 12%;
-    }
-    
-            .footer2 {
+      .footer2 {
          background-color: black;
          background-size: contain;
          background-position: center;
@@ -583,7 +583,6 @@ $(document).ready(function(){
         
     } 
         
-
     .footercontent2 {  
         position: absolute;
         left:50%;
@@ -600,16 +599,13 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa:hover {
     opacity: 0.5;
     }
-
     .fa-facebook {
   background-color: black;
   color: white;
     }
-
     .fa-twitter {
   background-color: black;
   color: white;
@@ -643,10 +639,228 @@ $(document).ready(function(){
                         margin-right: 8%;
                         
                     }
-            
-            
-
-.footerhead{
+    
+    
+    .support{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        text-align: center;
+    }
+    
+    #links{
+        padding-top: 5%;
+    }
+    
+    .btnhead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25;
+    }
+    
+    .supporthead{
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30;
+    }
+    
+    .supportcn{
+        width: 100%;
+        font-size: 18;
+        color: gray;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+    
+    .button1 {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family: 'PT Sans', sans-serif;
+}
+    
+    .button1 a {
+        text-decoration: none;
+}
+    
+    a:visited {
+        color: white;
+        text-decoration: none;
+}
+    
+    .button1:hover {
+        opacity: 0.5;        
+}
+    
+    #form{
+        padding-top: 8%;
+    }
+    
+    .contact{
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+        width: 70%;
+    }
+    
+        .formhead{
+        text-align: center;
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25;      
+    }
+    
+    .formcn{
+        text-align: center;
+        width: 100%;
+        font-size: 18;
+        color: gray;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+    
+    .contactus{
+        width: 100%;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40;  
+    }
+    
+    .preform{
+        width: 100%;
+        font-size: 15;
+        color: gray;
+        font-family: 'PT Sans', sans-serif;
+        padding-bottom: 8%;
+    }
+    
+    input, label {
+    display:block;
+}
+    
+    label{
+        font-weight: bold;
+        font-size: 18;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    .name-first, .name-last, .residing-country, .residing-state, .phone-number, .email-address, .subject-content, .message-content{
+        float: left;
+        margin-right: 2%;
+        padding-bottom: 3%;
+    }
+    
+    
+    #message{
+        width: 100%;
+        padding-bottom: 20%;
+        margin-right: 350px;
+        width: 100%;
+    }
+    
+    #subject{
+        width: 100%;
+        margin-right: 350px;
+        width: 100%;  
+    }
+    
+    .send{
+        width: 50%;
+        text-align: center;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        border-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16;
+        margin-left: 25%;
+        height: 30px;
+  
+    }
+    
+    .send:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .qanda{
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+    
+    #faq{
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    
+    .button1 a{
+        color: white;
+        text-decoration: none;
+    }
+ 
+    
+    .formmob{
+        padding-left: 6%;
+    }
+    
+     .faqhead{
+        font-size: 40;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .question{
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    
+    .answer{
+        font-family: 'Merriweather', serif;
+        color: #4e4c4c
+        
+    }
+    
+    .AOThead {
+        font-size: 30;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .AOTcn{
+        font-family: 'Merriweather', serif;
+        color: #4e4c4c}
+    
+    .tips{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        text-align: center;
+    }
+    
+    
+    #mobilefooterwrapper{
+        padding-top: 50%;
+    }
+    
+    .footerhead{
             font-family: 'Ubuntu', sans-serif;
         font-weight: bolder;
     }
@@ -658,8 +872,8 @@ $(document).ready(function(){
         color: white;
         text-decoration: none;
     }
-            
-            .scrolltop{ 
+    
+    .scrolltop{ 
             position: fixed;
             top: 90%;
             left: 1%;
@@ -672,42 +886,23 @@ $(document).ready(function(){
                 color: gray;
                 text-decoration: none;
             }
-            
-            
-        }
-        
-        /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
-        
-        
-        /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
+    
+    } /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
+    
+    /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
         
                 @media only screen and (max-width: 767px) {
-
-               
+                    body{
+                        margin: 0;
+                        padding: 0;
+                        overflow-x: hidden;
+                    }
                     
             .navwrapper {
                 display: none;
             }
-            
-            .ydwrapper {
-                display: none;
-            }
-            
-            .whwrapper {
-                display: none;
-            }
-            
-            .footer {
-                display: none;
-            }
-
-    body {
-        margin: 0;
-        overflow-x: hidden;
-
-    }
-            
-            .navwrapper {
+                    
+                     .navwrapper {
                 display: none;
             }
             
@@ -718,7 +913,6 @@ $(document).ready(function(){
     background-color: #383838;
     width: 100%;
 }
-
 .navbar2 a {
     font-family: 'Oswald', sans-serif;
     display: block;
@@ -727,8 +921,6 @@ $(document).ready(function(){
     text-decoration: none;
     text-align: center;
 }
-
-
 .navbar2 a:hover {
         background-color: black;
 }
@@ -760,95 +952,8 @@ $(document).ready(function(){
         text-decoration: none;
         color: white;
     }
-              .ydcn2 {
-        text-align: center;
-    }
-    
-            .ydwrapper2 {
-                width: 80%;
-                margin: auto;
-                padding-top: 7%;
-            }
-
-            
-            
-    #ydcontent2 {
-        padding-top: 7%;
-    }
-    
-        .ydhead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-            
-            .atwrapper2 {
-                width: 80%;
-                margin: auto;
-                padding-top: 7%;
-            }
-    
-    .ydpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    img.midyd {
-    vertical-align: middle;
-}  
-            
-               .atcn2 {
-        text-align: center;
-    }
-    
-
-    #atcontent2 {
-        padding-top: 7%;
-    }
-    
-        .athead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-        
-    }
-    
-    .atpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    img.midat {
-    vertical-align: middle;
-    
-}
-            
-        .whcn2 {
-        float: left;
-        text-align: center;
-        margin-left: 15%;
-    }
-    
-
-    #whcontent2 {
-        padding-top: 7%;
-    }
-    
-        .whhead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-    
-    .whpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    .whwrapper2 {
-        width: 85%;
-        padding-top: 7%;
-        padding-bottom: 12%;
-    }
-    
-            .footer2 {
+                    
+                                         .footer2 {
          background-color: black;
          background-size: contain;
          background-position: center;
@@ -878,7 +983,6 @@ $(document).ready(function(){
                         margin-right: 4%;
                     }
         
-
     .footercontent2 {  
         position: absolute;
         left:50%;
@@ -895,16 +999,13 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa:hover {
     opacity: 0.5;
     }
-
     .fa-facebook {
   background-color: black;
   color: white;
     }
-
     .fa-twitter {
   background-color: black;
   color: white;
@@ -921,47 +1022,35 @@ $(document).ready(function(){
     color: white;
         
     }
-            
-            
-        }
-        
-        /*!!!!!!!!!!END MED TABLET CSS!!!!!!!!!*/
-        
-        
-        /*!!!!!!!!!!BEGIN MOBILE PHONES!!!!!!!!!*/
+                    
+                     .desktopwrap{
+                display: none;
+            }
+                    
+        #mobilefooterwrapper{
+        padding-top: 100%;
+    }
+                    
+    }/*END MED TABLET CSS*/
+    
+    /*!!!!!!!!!!BEGIN MOBILE PHONES!!!!!!!!!*/
         
         @media only screen and (max-width: 479px) {
-
-               
+                    body{
+                        padding: 0;
+                        margin: 0;
+                        overflow-x: hidden;
+                    }
                     
             .navwrapper {
                 display: none;
+                
             }
             
-            .ydwrapper {
+            .desktopwrap{
                 display: none;
             }
-            
-            .whwrapper {
-                display: none;
-            }
-            
-            .footer {
-                display: none;
-            }
-            
-            
-            .footlogo2wrap{
-                display: none;
-            }
-
-    body {
-        margin: 0;
-        overflow-x: hidden;
-
-    }
-            
-            .navwrapper {
+             .navwrapper {
                 display: none;
             }
             
@@ -972,7 +1061,6 @@ $(document).ready(function(){
     background-color: #383838;
     width: 100%;
 }
-
 .navbar2 a {
     font-family: 'Oswald', sans-serif;
     display: block;
@@ -981,8 +1069,6 @@ $(document).ready(function(){
     text-decoration: none;
     text-align: center;
 }
-
-
 .navbar2 a:hover {
         background-color: black;
 }
@@ -1014,95 +1100,8 @@ $(document).ready(function(){
         text-decoration: none;
         color: white;
     }
-              .ydcn2 {
-        text-align: center;
-    }
-    
-            .ydwrapper2 {
-                width: 80%;
-                margin: auto;
-                padding-top: 7%;
-            }
-
             
-            
-    #ydcontent2 {
-        padding-top: 7%;
-    }
-    
-        .ydhead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-            
-            .atwrapper2 {
-                width: 80%;
-                margin: auto;
-                padding-top: 7%;
-            }
-    
-    .ydpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    img.midyd {
-    vertical-align: middle;
-}  
-            
-               .atcn2 {
-        text-align: center;
-    }
-    
-
-    #atcontent2 {
-        padding-top: 7%;
-    }
-    
-        .athead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-        
-    }
-    
-    .atpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    img.midat {
-    vertical-align: middle;
-    
-}
-            
-        .whcn2 {
-        float: left;
-        text-align: center;
-        margin-left: 15%;
-    }
-    
-
-    #whcontent2 {
-        padding-top: 7%;
-    }
-    
-        .whhead2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold; 
-        
-    }
-    
-    .whpg2 {
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    .whwrapper2 {
-        width: 85%;
-        padding-top: 7%;
-        padding-bottom: 12%;
-    }
-    
-            .footer2 {
+        .footer2 {
          background-color: black;
          background-size: contain;
          background-position: center;
@@ -1116,7 +1115,6 @@ $(document).ready(function(){
         
     } 
         
-
     .footercontent2 {  
         position: absolute;
         left:50%;
@@ -1133,16 +1131,13 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa:hover {
     opacity: 0.5;
     }
-
     .fa-facebook {
   background-color: black;
   color: white;
     }
-
     .fa-twitter {
   background-color: black;
   color: white;
@@ -1160,119 +1155,285 @@ $(document).ready(function(){
         
     }
             
+            .ydfootlogo2{
+                display: none;
+            }
+        
+            .atfootlogo2{
+                display:none;
+            }
             
-        }
-        
-        /*!!!!!!!!!!END MOBILE PHONE CSS!!!!!!!!!!*/       
-    </style>
+            #message{
+        width: 100%;
+        padding-bottom: 20%;
+        margin-right: 150px;
+        width: 100%;
+    }
     
-
+    #subject{
+        width: 100%;
+        margin-right: 150px;
+        width: 100%;  
+    }
+          
+        #mobilefooterwrapper{
+        padding-top: 200%;
+    }    
+            
+            
+    }/*END MOBILE PHONE CSS/*
     
-
-    
-
     
     
-    <body>
-        
+</style>
+    
+    
+<body>
+    
+<!--DESKTOP BEGIN--> <div class = "desktopwrap">
+   
 <div class = "navwrapper">
         
 <div class="navigation">
   <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_HOME.html">HOME</a>
   <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_ABOUT.html">ABOUT</a>
   <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">SHOP</a>
-  <a class = "navbar" id = "active" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">COMPANY</a>
-  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a>
+  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">COMPANY</a>
+  <a class = "navbar" id = "active" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a>
     <img class = "icon" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "80px" width = "130px">
     
     </div><!--navigation-->
         
     </div><!--navwrapper1-->
+    
+<div class = "row" id = "supportandform">
+    
+<div class = "col-6 links">
+    
+<div class = "supporthead">We are accepting Dealer Applications.</div>
+    
+<br>
+    
+<div class = "supportcn">If your Company is interested in sales, support, training and service of Yield Defender Drones, please fill out the dealer application in the the documents below.</div>
+<br>    
+    
+<div class = "btnhead">Support Document and Downloads</div>
+<hr width = "80%">
+<br>
+    
+<div class = "btnswrap">
+ 
+<button class="button1"><a href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0">Dealer Application</a></button>
         
+    <br><br>
         
-<div class = "ydwrapper">
-
-<div class="row" id = "ydcontent">
+    <button class="button1"><a href = "https://nebula.wsimg.com/8ec98280efdd8a535a126808da97636e?AccessKeyId=B32FB2B1A7DDAC4E960A&disposition=0&alloworigin=1">NTDUG Standard Operating Procedures</a></button>
     
-
-<div class="col-7 ydcn">
-    
-
-    <div class = "ydhead"><font size = "6">About The YieldDefender Product</font></div>
-    <hr>
-    <p class = "ydpg">Yield Defender is an unmanned aerial system specifically engineered to serve the agriculture industry. The UAS is an impressively designed machine with onboard systems that maximize its capability and value to the industry. Sensors using Near Infrared (NIR), thermal imaging, and Light Detection and Ranging (LIDAR) technology integrated with CropVue web based flight management provide advanced analysis solutions. Manufacturing, research and development will be headquartered in Olney, Texas. </p>
-
-        </div>
-    
-
-    
-
-<div class="col-5 ydimg">
-<img class = "ydlogo" src="https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" />
-</div>
-    
-        <div class = "atwrapper">
-
-<div class="row" id = "atcontent">
-    
-
-<div class="col-7 atcn">
-    
-
-    <div class = "athead"><font size = "6">Air Tractor Inc.</font></div>
-    <hr>
-    <p class = "atpg">At its Olney, Texas manufacturing facilities, Air Tractor produces a line of nine aircraft that includes 400, 500, 600 and 800-gallon capacity airplanes powered by Pratt & Whitney Canada PT6 turbine engines. They are used for agricultural purposes, fire fighting, narcotic crop eradication, fuel hauling, fighting locust plagues, and cleaning up oil spills in coastal waters. From North, South and Central America, to Australia, Indonesia and China to Spain, Italy, Croatia and Africa, Air Tractor aircraft can be found in more than 30 countries around the world and are supported by a global network of Air Tractor dealers. </p>
-
-        </div>
-    
-
-    
-
-<div class="col-5 atimg">
-<img class = "atlogo" src= "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495728669/AT_COMP_nu2bxv.png" height = "280px"/>
-</div>
-    
-        </div>
+    <br><br>
         
+    <button class="button1"><a href = "http://www.meetup.com/North-Texas-Drone-User-Group/">North Texas Drone User's Group</a></button>
+    
+    <br><br>    
+        
+    <button class="button1"><a href = "https://www.dropbox.com/s/i07slx1hrhuo89h/Drone%20ROI%20Calculator.xlsx?dl=0">Drone Return on Investment Tool</a></button>
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/lotd1sslqm2zawd/YDD%20Self-Guided%20Training.docx?dl=0">Self-Guided Training</a></button>
+    
+    <br><br>    
+        
+    <button class="button1"><a href = "https://www.dropbox.com/s/eirhnrj4xydeb7m/appDeploy_V1_0_1.zip?dl=0">CropVue Imaging Download</a></button> 
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/nmul59s74k0fgo9/CropVue%20manual%202.pdf?dl=0">CropVue Imaging Manual</a></button> 
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/rsdywy71zz85xl1/MissionPlanner-1.3.38.msi?dl=0">Mission Planner Download</a></button> 
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/sy27qkohmoxd77k/YDD%20DOM%20V2.1.pptx?dl=0">Hangar 78 UAV Drone Operator Manual</a></button>    
+    
+    
+    
+    
+    
+</div><!--btnswrap-->
+    
+    
+</div><!--col-6 links-->
+    
+<div id = "leftwrapper">   
+    
+<div class = "col-6 form">
+    
+<div class = "formhead">For contact of area dealers refer to:</div>
+    
+ 
+    
+<div class = "formcn">
+    info@yielddefender.com
+        <br>
+    870-270-4255
+</div><!--form sc-->
+    
+    <br>
+    
+<div class = "contactus">CONTACT US:</div>
+    
+<div class = "preform">
+    
+ Common questions may already be answered in FAQ section below.
+                    <br>
+Fields marked with an <font color = "red">*</font> are required.    
+    
+</div><!--preform-->   
+    
+<form method="POST" action="http://formspree.io/willcoleman326@gmail.com">
+  
+    
+    <div class = "name-first">
+        <label for="firstname">First Name:</label>
+        <input id="firstname" type="text" name="firstname">
+    </div>
+        
+        <div class = "name-last">
+        <label for=lastname>Last Name:</label>
+        <input id="lastname" type="text" name="lastname">
+    </div>
+    <div class = "phone-number">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="text" name="phone">
     </div>
     
-
-
-</div>
-
-</div>            
-        
-        
-<div class = "whwrapper">
-
-<div class="row" id = "whcontent">
+        <div class = "residing-country">
+        <label for="country">Country:</label>
+        <input id="country" type="text" name="country">
+    </div>
     
-
-<div class="col-9 whcn">
+           <div class = "residing-state">
+        <label for="state">State:</label>
+        <input id="state" type="text" name="state">
+    </div>
     
-
-    <div class = "whhead"><font size = "6">Wes Hall: VP of Unmanned Aerial Systems</font></div>
-    <hr>
-    <p class = "whpg"> Wes Hall grew up in the small farming community of Elmwood, Illinois and developed an interest in aviation thanks to a life-long friend and neighbor who shared a similar interest. He obtained his A&P license prior to undergraduate studies at Southern Illinois University, and his pastime endeavors pertaining to cars and motorcycles led to his perpetual interest the aerospace industry, with an emphasis on composites and systems research and development.
-        <br>
-        <br>
-        Wes worked at Boeing on various defense programs including Air Force One. His career progressed through the F16 and F35 programs at Lockheed Martin Aeronautics as a hydro-mechanical Systems Engineer. He also worked in Business Development for various aerospace companies. He started his own company and developed the Yield Defender Unmanned Aerial System for use in agriculture. 
-        <br>
-        <br>
-        Air Tractor, Inc. acquired his company and the Yield Defender program in 2016, and Wes is currently employed by Air Tractor as Vice-President, Unmanned Aerial Systems.  
-    </p>
-
-        </div>
+             <div class = "email-address">
+        <label for="email"><font color = "red">*</font>Email:</label>
+        <input id="email" type="text" name="email" required>
+    </div>
     
-
-
+    <div class = "subject-content">
+        <label for="subject">Subject:</label>
+        <input class = "sub" id="subject" type="text" name="subject">
+    </div>
     
-        </div>
+        <div class = "message-content">
+        <label for="message"><font color = "red">*</font>Message:</label>
+        <input class = "msg" id="message" type="text" name="message" required>
+    </div>
+    
+    
+<input class = "send" type = "submit" value = "SEND">
         
-    </div>   
+    
+ 
+    
+    </form>
+    
+    
+    
+    
+</div><!--col-6 form-->
+    
+</div><!--leftwrapper-->
+    
+    
+    
+    
+</div><!--row id support and form-->
+    
+    
+<div class = "row" id = "faq">
+    
+    
+<div class = "col-12 qanda">
         
-                    
-                        
+        <span class = "faqhead">FAQ:</span>
+        
+        <br>
+    
+    <hr width = "15%">
+        
+        <br>
+     
+    
+ <span class = "question"><b>Q:</b> How is Hangar78 able to sell this product for thousands of dollars less than the competition?</span>
+    
+      <br><br>
+    
+<span class = "answer"><b>A:</b> We design/manufacture/modify and build the entire system in our Texas facility. Most of our competition rely on separate companies to make the aircraft and sensors and they put the system together. Hangar78 bypasses the middle-man and passes the savings on to the Customer. This also allows for flexibility to quickly and efficiently create purposefully designed products.</span>
+    
+     <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> How long will the aircraft fly?</span>
+    
+      <br><br>
+    
+<span class = "answer"><b>A:</b> An Operator can cover 100 acres on each battery using our system. This is an important question to understand. Although technology is advancing, there is no magic here. Hangar78 is as good or better than the rest. There is a difference between design performance and actual performance. The reason for the difference is it is nearly impossible to account for mother nature. In other words, environmental conditions (payload, wind conditions, elevation, temperature, humidity).The HE is designed for 40 minute flight and we expect over 20 minutes. As always we are keeping up/developing technology and since we design our own aircraft we can implement very quickly.</span>
+    
+    <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> What happens if the battery runs low during a mission?</span>
+      <br><br>
+    
+<span class = "answer"><b>A:</b> The UAV is programmed to Return to Launch (RTL) when the battery reaches low voltage alarm. Thoughtful mission planning allows for enough time for the UAV to come home safely.</span> 
+    
+    <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> What should I do if I am in manual mode and am losing control?</span>
+      <br><br>
+    
+    <span class = "answer"><b>A:</b> Switch to Auto mode and the aircraft will try to run the last stored mission. If It is in a different area an invisible fence (geofence) will force the aircraft to land.</span>
+    
+        <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> What overlap and side lap is recommended?</span>
+    
+      <br><br>
+    
+    <span class = "answer"><b>A:</b>  We recommend 15%.</span>
+    
+    </div><!--q and a-->
+    
+    </div><!--row id faq-->
+    
+    
+<div class = "row" id = "aot">
+    
+<div class = "col-12 tips">
+    
+<div class = "AOThead">Additional Operation Tips:</div>
+    <br>
+    <hr width = "40%">
+    <br>
+    
+    <span class = "AOTcn">
+    Fly entire mission with yaw (orientation) in the same direction, default is North. Cropvue does allow manual manipulation if the images are not all in the same orientation, but this is not the most efficient method for processing.
+    <br><br>
+    Better GPS accuracy provides more accurate results.
+    <br><br>
+    Higher altitude (never break the FAA 400' regulation) covers more acres per flight.
+    </span>
+    
+    </div><!--col-12 tips-->
+    
+</div><!--row id aot--> 
+    
+    
+<!--desktopfooter-->
+    
         <div class = "footer">
                 
         <img class = "ydfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727564/blackandwhiteyd_j9mtpm.png" height = "240px" width = "290px">        
@@ -1293,30 +1454,28 @@ $(document).ready(function(){
         <br><br>
     <span class = "footercn">870-270-4255</span>
         <br><br>
+                    
+<div class = "smlinks">
 <a href="https://www.facebook.com/Hangar78UAV/" class="fa fa-facebook"></a>
 <a href="https://twitter.com/yielddefender" class="fa fa-twitter"></a>
 <a href="https://www.youtube.com/channel/UCISKEh-bwGRFuDNT2zEY76A" class="fa fa-youtube"></a>
 <a href="https://www.instagram.com/yielddefender/" class="fa fa-instagram"></a>
-    
+</div>
     </div>
             
-            </div>
+            </div><!--desktopfooter-->
     
     
-   
-        
-        
-        
-<!-- MOBILE -->   
-        
-    <div id = "topscreen"></div>
-        
-        
-        
-    <div class = "mobilewrapper">
-
-        
-        
+    
+    
+</div><!--end desktopwrap-->
+    
+<div id = "topscreen"></div>
+    
+    
+<!--tablet and phone begin--><div class = "mobilewrap">
+    
+    
 <div class = "navwrapper2">
 <ul class = "nav2">
     <center>
@@ -1324,91 +1483,263 @@ $(document).ready(function(){
   <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_HOME.html">HOME</a></li>
   <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_ABOUT.html">ABOUT</a></li>
   <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">SHOP</a></li>
-  <li id = "active2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">COMPANY</a></li>
-  <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a></li> 
+  <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">COMPANY</a></li>
+  <li id = "active2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a></li> 
     </center>
 </ul>
     
-</div>
-        
-    <div id = "scrolltotopbtnwrap">
+</div><!--navwrapper2-->
+    
+<div id = "scrolltotopbtnwrap">
         
         <div class = "scrolltop"><a class = "targettop" href = "#topscreen"><i class="fa fa-caret-up" style="font-size:36px"></i></a></div>
         
     </div><!--scrolltotopbtnwrap-->
-        
-        
-<div class = "ydwrapper2">
-
-<div class="row" id = "ydcontent2">
     
-
-<div class="col-7 ydcn2">
     
-
-<div class = "ydhead2"><font size = "6">About The YieldDefender Product
+<div class = "row" id = "links">
+    
+<div class = "col-12 support">
+    
+   <div class = "supporthead">We are accepting Dealer Applications.</div>
+    
+<br>
+    
+<div class = "supportcn">If your Company is interested in sales, support, training and service of Yield Defender Drones, please fill out the dealer application in the the documents below.</div>
+<br>    
+    
+<div class = "btnhead">Support Document and Downloads</div>
+<hr width = "80%">
+<br>
+    
+<div class = "btnswrap">
+ 
+<button class="button1"><a href = "https://www.dropbox.com/s/7vf4xq2e5tjw0b8/YD%20-%20Dealer%20Application.pdf?dl=0">Dealer Application</a></button>
+        
+    <br><br>
+        
+    <button class="button1"><a href = "https://nebula.wsimg.com/8ec98280efdd8a535a126808da97636e?AccessKeyId=B32FB2B1A7DDAC4E960A&disposition=0&alloworigin=1">NTDUG Standard Operating Procedures</a></button>
+    
+    <br><br>
+        
+    <button class="button1"><a href = "http://www.meetup.com/North-Texas-Drone-User-Group/">North Texas Drone User's Group</a></button>
+    
+    <br><br>    
+        
+    <button class="button1"><a href = "https://www.dropbox.com/s/i07slx1hrhuo89h/Drone%20ROI%20Calculator.xlsx?dl=0">Drone Return on Investment Tool</a></button>
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/lotd1sslqm2zawd/YDD%20Self-Guided%20Training.docx?dl=0">Self-Guided Training</a></button>
+    
+    <br><br>    
+        
+    <button class="button1"><a href = "https://www.dropbox.com/s/eirhnrj4xydeb7m/appDeploy_V1_0_1.zip?dl=0">CropVue Imaging Download</a></button> 
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/nmul59s74k0fgo9/CropVue%20manual%202.pdf?dl=0">CropVue Imaging Manual</a></button> 
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/rsdywy71zz85xl1/MissionPlanner-1.3.38.msi?dl=0">Mission Planner Download</a></button> 
+        
+    <br><br>    
+    
+    <button class="button1"><a href = "https://www.dropbox.com/s/sy27qkohmoxd77k/YDD%20DOM%20V2.1.pptx?dl=0">Hangar 78 UAV Drone Operator Manual</a></button>    
+    
+    
+    
+    
+    
+</div><!--btnswrap-->
+    
+    
+    
+</div><!--col-12 support--> 
+    
+    
+    
+</div><!--row id = links"-->
+    
+    
+<div class = "row" id = "form">
+    
+<div class = "col-12 contact">
+    
+    
+<div class = "formhead">For contact of area dealers refer to:</div>
+    
+ 
+    
+<div class = "formcn">
+    info@yielddefender.com
+        <br>
+    870-270-4255
+</div><!--form sc-->
+    
     <br>
-    <img class = "midyd" src="https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "90px" /></font></div>
-<hr>
-<p class = "ydpg2">Yield Defender is an unmanned aerial system specifically engineered to serve the agriculture industry. The UAS is an impressively designed machine with onboard systems that maximize its capability and value to the industry. Sensors using Near Infrared (NIR), thermal imaging, and Light Detection and Ranging (LIDAR) technology integrated with CropVue web based flight management provide advanced analysis solutions. Manufacturing, research and development will be headquartered in Olney, Texas. </p>
-
-</div>
     
-    </div>
+<div class = "contactus">CONTACT US:</div>
     
-        </div>
-        
-        
-        <div class = "atwrapper2">
-
-<div class="row" id = "atcontent2">
+<div class = "preform">
     
-
-<div class="col-7 atcn2">
+ Common questions may already be answered in FAQ section below.
+                    <br>
+Fields marked with an <font color = "red">*</font> are required.    
     
-
-    <div class = "athead2"><font size = "6">Air Tractor Inc.
-        <br>
-        <img class = "midat" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495728669/AT_COMP_nu2bxv.png" height = "80px" width = "90px" /></font></div>
-    <hr>
-    <p class = "atpg2">At its Olney, Texas manufacturing facilities, Air Tractor produces a line of nine aircraft that includes 400, 500, 600 and 800-gallon capacity airplanes powered by Pratt & Whitney Canada PT6 turbine engines. They are used for agricultural purposes, fire fighting, narcotic crop eradication, fuel hauling, fighting locust plagues, and cleaning up oil spills in coastal waters. From North, South and Central America, to Australia, Indonesia and China to Spain, Italy, Croatia and Africa, Air Tractor aircraft can be found in more than 30 countries around the world and are supported by a global network of Air Tractor dealers. </p>
-
-        </div>
-
-            </div>
-
-                </div>    
-       
+</div><!--preform-->   
     
-            <div class = "whwrapper2">
-
-<div class="row" id = "whcontent2">
-    
-
-<div class="col-9 whcn2">
-    
-
-    <div class = "whhead2"><font size = "6">Wes Hall: VP of Unmanned Aerial Systems</font></div>
-    <hr>
-    <p class = "whpg2"> Wes Hall grew up in the small farming community of Elmwood, Illinois and developed an interest in aviation thanks to a life-long friend and neighbor who shared a similar interest. He obtained his A&P license prior to undergraduate studies at Southern Illinois University, and his pastime endeavors pertaining to cars and motorcycles led to his perpetual interest the aerospace industry, with an emphasis on composites and systems research and development.
-        <br>
-        <br>
-        Wes worked at Boeing on various defense programs including Air Force One. His career progressed through the F16 and F35 programs at Lockheed Martin Aeronautics as a hydro-mechanical Systems Engineer. He also worked in Business Development for various aerospace companies. He started his own company and developed the Yield Defender Unmanned Aerial System for use in agriculture. 
-        <br>
-        <br>
-        Air Tractor, Inc. acquired his company and the Yield Defender program in 2016, and Wes is currently employed by Air Tractor as Vice-President, Unmanned Aerial Systems.  
-    </p>
-
-        </div>
-    
-
-
-    
-        </div>
-        
+<form class = "formmob" method="POST" action="http://formspree.io/willcoleman326@gmail.com">
+  
+    <center>
+    <div class = "name-first">
+        <label for="firstname">First Name:</label>
+        <input id="firstname" type="text" name="firstname">
     </div>
         
-            <div class = "footer2">
+        <div class = "name-last">
+        <label for=lastname>Last Name:</label>
+        <input id="lastname" type="text" name="lastname">
+    </div>
+    <div class = "phone-number">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="text" name="phone">
+    </div>
+    
+        <div class = "residing-country">
+        <label for="country">Country:</label>
+        <input id="country" type="text" name="country">
+    </div>
+    
+           <div class = "residing-state">
+        <label for="state">State:</label>
+        <input id="state" type="text" name="state">
+    </div>
+    
+             <div class = "email-address">
+        <label for="email"><font color = "red">*</font>Email:</label>
+        <input id="email" type="text" name="email" required>
+    </div>
+        
+        </center>
+    
+    <div class = "subject-content">
+        <label for="subject">Subject:</label>
+        <input class = "sub" id="subject" type="text" name="subject">
+    </div>
+    
+        <div class = "message-content">
+        <label for="message"><font color = "red">*</font>Message:</label>
+        <input class = "msg" id="message" type="text" name="message" required>
+    </div>
+    
+    
+<input class = "send" type = "submit" value = "SEND">
+        
+    
+ 
+    
+    </form>
+    
+    
+    
+    
+    
+</div><!--col-12 contact-->    
+    
+    
+    
+    
+</div><!--row id = form-->
+    
+    
+<div class = "row" id = "faq">
+    
+<div class = "col-12 qanda">
+    
+<span class = "faqhead">FAQ:</span>
+        
+        <br>
+    
+    <hr width = "15%">
+        
+        <br>
+     
+    
+ <span class = "question"><b>Q:</b> How is Hangar78 able to sell this product for thousands of dollars less than the competition?</span>
+    
+      <br><br>
+    
+<span class = "answer"><b>A:</b> We design/manufacture/modify and build the entire system in our Texas facility. Most of our competition rely on separate companies to make the aircraft and sensors and they put the system together. Hangar78 bypasses the middle-man and passes the savings on to the Customer. This also allows for flexibility to quickly and efficiently create purposefully designed products.</span>
+    
+     <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> How long will the aircraft fly?</span>
+    
+      <br><br>
+    
+<span class = "answer"><b>A:</b> An Operator can cover 100 acres on each battery using our system. This is an important question to understand. Although technology is advancing, there is no magic here. Hangar78 is as good or better than the rest. There is a difference between design performance and actual performance. The reason for the difference is it is nearly impossible to account for mother nature. In other words, environmental conditions (payload, wind conditions, elevation, temperature, humidity).The HE is designed for 40 minute flight and we expect over 20 minutes. As always we are keeping up/developing technology and since we design our own aircraft we can implement very quickly.</span>
+    
+    <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> What happens if the battery runs low during a mission?</span>
+      <br><br>
+    
+<span class = "answer"><b>A:</b> The UAV is programmed to Return to Launch (RTL) when the battery reaches low voltage alarm. Thoughtful mission planning allows for enough time for the UAV to come home safely.</span> 
+    
+    <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> What should I do if I am in manual mode and am losing control?</span>
+      <br><br>
+    
+    <span class = "answer"><b>A:</b> Switch to Auto mode and the aircraft will try to run the last stored mission. If It is in a different area an invisible fence (geofence) will force the aircraft to land.</span>
+    
+        <br><br><br><br>
+    
+    <span class = "question"><b>Q:</b> What overlap and side lap is recommended?</span>
+    
+      <br><br>
+    
+    <span class = "answer"><b>A:</b>  We recommend 15%.</span>
+    
+    
+    
+</div><!--col-12 qanda-->  
+    
+    
+    
+</div><!--row id faq-->
+    
+    
+<div id = "row" id = "aot">
+    
+<div class = "col-12 tips">
+    
+<div class = "AOThead">Additional Operation Tips:</div>
+    <br>
+    <hr width = "40%">
+    <br>
+    
+    <span class = "AOTcn">
+    Fly entire mission with yaw (orientation) in the same direction, default is North. Cropvue does allow manual manipulation if the images are not all in the same orientation, but this is not the most efficient method for processing.
+    <br><br>
+    Better GPS accuracy provides more accurate results.
+    <br><br>
+    Higher altitude (never break the FAA 400' regulation) covers more acres per flight.
+    </span>    
+    
+    
+</div><!--col-12 tips-->
+    
+    
+    
+</div><!--row id aot-->
+    
+<!--mobilefooterbegin-->
+    
+<div id = "mobilefooterwrapper">
+<div class = "footer2">
                 
     
         
@@ -1434,26 +1765,27 @@ $(document).ready(function(){
 <a href="https://www.youtube.com/channel/UCISKEh-bwGRFuDNT2zEY76A" class="fa fa-youtube"></a>
 <a href="https://www.instagram.com/yielddefender/" class="fa fa-instagram"></a>
     
-        
-  
     </div>
                 
                 <div class = "footlogo2wrap">
                 
-                <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727564/blackandwhiteyd_j9mtpm.png" height = "100%" width = "100%"></div> 
+                <div class = "atfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495728090/Air-Tractor-Logo-Footer_1_v0lfb2.png" height = "100%" width = "100%"></div> 
                 
-                <div class = "ydfootlogo2"><img src = "http://res.cloudinary.com/yielddefender/image/upload/q_100/v1495728090/Air-Tractor-Logo-Footer_1_v0lfb2.png" height = "100%" width = "100%"></div> 
+                <div class = "ydfootlogo2"><img src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727564/blackandwhiteyd_j9mtpm.png" height = "100%" width = "100%"></div> 
     
                     </div>
     
-    </div>
-        
-        </div>
-        
-        
+    </div><!--endmobilefooter-->
+    
+</div>
+    
+    
+    
+    
+</div><!--end mobilewrap-->
+    
+    
+    
+    
 </body>
-
-
-
-
 </html>
