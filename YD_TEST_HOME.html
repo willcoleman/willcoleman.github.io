@@ -21,18 +21,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-
   $(".targettop").on('click', function(event) {
-
   
     if (this.hash !== "1") {
  
       event.preventDefault();
-
   
       var hash = this.hash;
-
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 1500, function(){
@@ -48,18 +43,10 @@ $(document).ready(function(){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-
   $(".target").on('click', function(event) {
-
-
     if (this.hash !== "1") {
-
       event.preventDefault();
-
-
       var hash = this.hash;
-
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 1500, function(){
@@ -75,18 +62,13 @@ $(document).ready(function(){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-
   $(".target2").on('click', function(event) {
-
   
     if (this.hash !== "1") {
  
       event.preventDefault();
-
   
       var hash = this.hash;
-
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 1500, function(){
@@ -109,7 +91,6 @@ $(document).ready(function(){
     
  /*!!!!!!!!!!BEGIN DESKTOP CSS!!!!!!!!!!*/
     
-
             
  * {
     box-sizing: border-box;
@@ -159,13 +140,10 @@ $(document).ready(function(){
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: #383838;
+    background: #233e6c;
     height: 100px;
     text-align: center;
-
-
 }
-
 .navigation a {
     float: left;
     color: white;
@@ -178,11 +156,10 @@ $(document).ready(function(){
 }
     
     .navigation a:hover{
-     background-color: black;
+     background-color: #4d4d4d;
     height: 100%;
 }
     
-
     
      .icon{
         padding-top: 0.5%;
@@ -191,12 +168,12 @@ $(document).ready(function(){
     }
         
                 #active {
-            background-color: #b1b1b1;
+            background-color: #233e6c;
             height: 100%;
         }
     
                         .footer {
-         background-color: black;
+         background-color: #4d4d4d;
          background-size: cover;
          background-position: center;
          position: absolute;
@@ -238,7 +215,6 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa-facebook:hover {
     opacity: 0.7;
     }
@@ -255,28 +231,26 @@ $(document).ready(function(){
         opacity: 0.7;
     }
     
-
     .fa-facebook {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
         text-decoration: none;
     }
-
     .fa-twitter {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
         text-decoration: none;
     }
     
     .fa-instagram {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
         text-decoration: none;
         
     }
     
     .fa-youtube {
-    background-color: black;
+    background-color: #4d4d4d;
     color: white;
     text-decoration: none;
         
@@ -304,13 +278,10 @@ $(document).ready(function(){
         
     }
     
-
 @-webkit-keyframes h1 {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
-
 @keyframes h1 {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -336,8 +307,6 @@ $(document).ready(function(){
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
-
 @keyframes h2 {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -345,7 +314,6 @@ $(document).ready(function(){
     
     .headpic,{
         width: 100%;
-
         
     }
     
@@ -364,8 +332,6 @@ $(document).ready(function(){
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
-
 @keyframes headpic {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -397,15 +363,11 @@ $(document).ready(function(){
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
-
 @keyframes scrollbtn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
         
-
     
     #header{
         background-repeat: no-repeat;
@@ -451,10 +413,9 @@ $(document).ready(function(){
     
     .h78content{
         width: 100%;
-        font-size: 25;
-        color: gray;
-        font-style: italic;
-        font-family: 'Merriweather', serif;
+        font-size: 18;
+        color: #525252;
+        font-family: Arial, Helvetica, sans-serif
     }
     
     
@@ -485,7 +446,7 @@ $(document).ready(function(){
     
     .producthead{
         width: 100%;
-        font-size: 25;
+        font-size: 20;
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 1%;
@@ -544,7 +505,6 @@ $(document).ready(function(){
         -webkit-transition: background-color 0.25s ease-out;
         -ms-transition: background-color 0.25s ease-out;
         
-
       
     }
     
@@ -642,7 +602,8 @@ $(document).ready(function(){
     }
     
     .prevhead1{
-        font-size: 20;
+        font-size: 17;
+        padding-top: 20px;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
     }
@@ -661,6 +622,7 @@ $(document).ready(function(){
     
     .prevhead2{
         display:none;
+        padding-top: 20px;
         color: white;
         font-size: 25;
         font-weight: bolder;
@@ -791,6 +753,10 @@ $(document).ready(function(){
         
     }
     
+    .headerdesk{
+        display: none;
+    }
+    
     .navwrapper{
         display: none;
     }
@@ -807,10 +773,9 @@ $(document).ready(function(){
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #383838;
+    background-color: #233e6c;
     width: 100%;
 }
-
 .navbar2 a {
     font-family: 'Oswald', sans-serif;
     display: block;
@@ -819,10 +784,8 @@ $(document).ready(function(){
     text-decoration: none;
     text-align: center;
 }
-
-
 .navbar2 a:hover {
-        background-color: black;
+        background-color: #4d4d4d;
 }
     
     .ydd {
@@ -840,7 +803,7 @@ $(document).ready(function(){
     
             #active2 {
             font-family: 'Oswald', sans-serif;
-            background-color: #b1b1b1;
+            background-color: #333333;
             display: block;
             padding: 8px 16px;
             text-decoration: none;
@@ -854,7 +817,7 @@ $(document).ready(function(){
     }
     
       .footer2 {
-         background-color: black;
+         background-color: #4d4d4d;
          background-size: contain;
          background-position: center;
          position: absolute;
@@ -867,7 +830,6 @@ $(document).ready(function(){
         
     } 
         
-
     .footercontent2 {  
         position: absolute;
         left:50%;
@@ -893,7 +855,6 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa-facebook:hover {
     opacity: 0.5;
     }
@@ -909,25 +870,23 @@ $(document).ready(function(){
      .fa-youtube:hover {
     opacity: 0.5;
     }
-
     .fa-facebook {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
     }
-
     .fa-twitter {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
     }
     
     .fa-instagram {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
         
     }
     
     .fa-youtube {
-    background-color: black;
+    background-color: #4d4d4d;
     color: white;
         
     }
@@ -985,12 +944,10 @@ $(document).ready(function(){
         opacity: 1.0;
         cursor: pointer;
     }
-
         
-
     
     #header{
-        
+        display: none;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1034,10 +991,9 @@ $(document).ready(function(){
     
     .h78content{
         width: 100%;
-        font-size: 25;
-        color: gray;
-        font-style: italic;
-        font-family: 'Merriweather', serif;
+        font-size: 18;
+        color: #525252;
+        font-family: Arial, Helvetica, sans-serif
     }
     
     .hequadcn{
@@ -1050,7 +1006,7 @@ $(document).ready(function(){
     
     .producthead{
         width: 100%;
-        font-size: 35;
+        font-size: 20;
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 1%;
@@ -1317,9 +1273,6 @@ $(document).ready(function(){
     .headimg{
         padding-bottom: 15%;
     }
-
-
-
     
     
     } /*!!!!!!!!!!END LARGE TABLET CSS!!!!!!!!!!*/
@@ -1327,7 +1280,6 @@ $(document).ready(function(){
     /*!!!!!!!!!!BEGIN MED TABLET CSS!!!!!!!!!!*/
         
                 @media only screen and (max-width: 767px) {
-
                     body{
                         overflow-x: hidden;
                         margin: 0;
@@ -1348,10 +1300,10 @@ $(document).ready(function(){
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #383838;
+    background-color: #233e6c;
+    background-color: #233e6c;
     width: 100%;
 }
-
 .navbar2 a {
     font-family: 'Oswald', sans-serif;
     display: block;
@@ -1360,10 +1312,8 @@ $(document).ready(function(){
     text-decoration: none;
     text-align: center;
 }
-
-
 .navbar2 a:hover {
-        background-color: black;
+        background-color: 4d4d4d;
 }
     
     .ydd {
@@ -1381,7 +1331,7 @@ $(document).ready(function(){
     
             #active2 {
             font-family: 'Oswald', sans-serif;
-            background-color: #b1b1b1;
+            background-color: #333333;
             display: block;
             padding: 8px 16px;
             text-decoration: none;
@@ -1395,7 +1345,7 @@ $(document).ready(function(){
     }
                     
                                          .footer2 {
-         background-color: black;
+         background-color: #4d4d4d;
          background-size: contain;
          background-position: center;
          position: absolute;
@@ -1424,7 +1374,6 @@ $(document).ready(function(){
                         margin-right: 4%;
                     }
         
-
     .footercontent2 {  
         position: absolute;
         left:50%;
@@ -1441,7 +1390,6 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa-facebook:hover {
     opacity: 0.5;
     }
@@ -1457,25 +1405,23 @@ $(document).ready(function(){
      .fa-youtube:hover {
     opacity: 0.5;
     }
-
     .fa-facebook {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
     }
-
     .fa-twitter {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
     }
     
     .fa-instagram {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
         
     }
     
     .fa-youtube {
-    background-color: black;
+    background-color: #4d4d4d;
     color: white;
         
     }
@@ -1502,10 +1448,9 @@ $(document).ready(function(){
     
     .h78content{
         width: 100%;
-        font-size: 25;
-        color: gray;
-        font-style: italic;
-        font-family: 'Merriweather', serif;
+        font-size: 18;
+        color: #525252;
+        font-family: Arial, Helvetica, sans-serif
     }
     
     .hequadcn{
@@ -1517,7 +1462,7 @@ $(document).ready(function(){
     
     .producthead{
         width: 100%;
-        font-size: 25;
+        font-size: 20;
         font-weight: bolder;
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 1%;
@@ -1578,7 +1523,6 @@ $(document).ready(function(){
     /*!!!!!!!!!!BEGIN MOBILE PHONES!!!!!!!!!*/
         
         @media only screen and (max-width: 479px) {
-
                     body{
                         
                         overflow-x: hidden;
@@ -1610,10 +1554,9 @@ $(document).ready(function(){
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #383838;
+    background-color: #233e6c;
     width: 100%;
 }
-
 .navbar2 a {
     font-family: 'Oswald', sans-serif;
     display: block;
@@ -1622,10 +1565,8 @@ $(document).ready(function(){
     text-decoration: none;
     text-align: center;
 }
-
-
 .navbar2 a:hover {
-        background-color: black;
+        background-color: #4d4d4d;
 }
     
     .ydd {
@@ -1643,7 +1584,7 @@ $(document).ready(function(){
     
             #active2 {
             font-family: 'Oswald', sans-serif;
-            background-color: #b1b1b1;
+            background-color: #333333;
             display: block;
             padding: 8px 16px;
             text-decoration: none;
@@ -1657,7 +1598,7 @@ $(document).ready(function(){
     }
             
                                     .footer2 {
-         background-color: black;
+         background-color: #4d4d4d;
          background-size: contain;
          background-position: center;
          position: absolute;
@@ -1670,7 +1611,6 @@ $(document).ready(function(){
         
     } 
         
-
     .footercontent2 {  
         position: absolute;
         left:50%;
@@ -1687,7 +1627,6 @@ $(document).ready(function(){
     text-align: center;
     text-decoration: none;
   }
-
     .fa-facebook:hover {
     opacity: 0.5;
     }
@@ -1703,25 +1642,23 @@ $(document).ready(function(){
      .fa-youtube:hover {
     opacity: 0.5;
     }
-
     .fa-facebook {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
     }
-
     .fa-twitter {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
     }
     
     .fa-instagram {
-  background-color: black;
+  background-color: #4d4d4d;
   color: white;
         
     }
     
     .fa-youtube {
-    background-color: black;
+    background-color: #4d4d4d;
     color: white;
         
     }
@@ -1825,6 +1762,8 @@ $(document).ready(function(){
     
 <!--DESKTOP BEGIN--> <div class = "desktopwrap">
     
+<div class = "headerwrap">   
+    
 <div class = "row" id = "header">
     
 <div class = "col-12 head">
@@ -1843,6 +1782,8 @@ $(document).ready(function(){
     
 </div><!--col-12 head-->
     
+    </div> 
+    
 
     
 </div><!--row id header-->
@@ -1850,11 +1791,11 @@ $(document).ready(function(){
 <div class = "navwrapper" id = "nav">
         
 <div class="navigation">
-  <a class = "navbar" id = "active" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_HOME.html">HOME</a>
+  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_HOME.html">HOME</a>
   <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_ABOUT.html">ABOUT</a>
-  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">SHOP</a>
+  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">PRODUCTS</a>
   <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">COMPANY</a>
-  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a>
+  <a class = "navbar" href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">SUPPORT</a>
     <img class = "icon" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "80px" width = "130px">
     
     </div><!--navigation-->
@@ -1865,12 +1806,17 @@ $(document).ready(function(){
     
 <div class = "col-12 h78wrap">
     
-<div class = "h78head">WELCOME TO HANGAR 78</div>
-<hr>
+<div class = "h78head">Yield Defender helps you get the most out of every acre</div>
+
 <br>
-<div class = "h78content">Valuable resource for real estate agents, farmers/ranchers, search and rescue, mining, oil and gas, forestry and many more...</div>
+<div class = "h78content">Our legacy has been built on providing ag producers an effective and efficient method of increasing yields and maximizing your return on every acre.
+<br><br>
+For over 40 years we have been building purpose built aerial spray planes to help meet the world’s food, fuel, and fiber needs. Being true to our founder's vision of innovation.  We are bringing our expertise of aviation and agriculture into building unmanned aircraft systems (UAS).
+<br><br>
+Yield Defender allows you to make smart data-driven decisions for each of your farms.  Together, we collect and analyze field data, measure performance and build prescriptions.    
+</div>
 <br>
-<hr>
+
     
     
 </div><!--col-12 h78wrap-->   
@@ -1933,9 +1879,9 @@ $(document).ready(function(){
     
 <div class = "col-3 about">
     
-<div class = "prevhead1">Want to know more?</div>
+<div class = "prevhead1">Learn More</div>
     
-<div class = "prevhead2">ABOUT</div>
+<div class = "prevhead2">About</div>
     
 <div class = "prevpic1"><i class="fa fa-list-alt" style="font-size:60px;"></i></div>
     
@@ -1949,9 +1895,9 @@ $(document).ready(function(){
     
 <div class = "col-3 shop">
     
-<div class = "prevhead1">Want to explore options?</div>
+<div class = "prevhead1">Explore Options</div>
     
-<div class = "prevhead2">SHOP</div>
+<div class = "prevhead2">Products</div>
     
 <div class = "prevpic1"><i class="fa fa-dollar" style="font-size:60px"></i></div>
     
@@ -1965,9 +1911,9 @@ $(document).ready(function(){
     
 <div class = "col-3 company">
     
-<div class = "prevhead1">What are we about?</div>
+<div class = "prevhead1">More About YD</div>
     
-<div class = "prevhead2">COMPANY</div>
+<div class = "prevhead2">Company</div>
     
 <div class = "prevpic1"><i class="fa fa-briefcase" style="font-size:60px"></i></div>
     
@@ -1981,9 +1927,9 @@ $(document).ready(function(){
     
 <div class = "col-3 contact">
     
-<div class = "prevhead1">Have questions?</div>
+<div class = "prevhead1">Questions & Documents</div>
     
-<div class = "prevhead2">CONTACT</div>
+<div class = "prevhead2">Support</div>
     
 <div class = "prevpic1"><i class="fa fa-envelope" style="font-size:60px"></i></div>
     
@@ -2002,9 +1948,9 @@ $(document).ready(function(){
     
         <div class = "footer">
                 
-        <img class = "ydfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727564/blackandwhiteyd_j9mtpm.png" height = "240px" width = "290px">        
+        <img class = "ydfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495728090/Air-Tractor-Logo-Footer_1_v0lfb2.png" height = "230px" width = "250px">        
     
-        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495728090/Air-Tractor-Logo-Footer_1_v0lfb2.png" height = "230px" width = "250px">
+        <img class = "atfootlogo" src = "https://res.cloudinary.com/yielddefender/image/upload/v1495727268/YD_logo_bxbcsu.png" height = "240px" width = "290px">
 
             
                         
@@ -2080,9 +2026,9 @@ $(document).ready(function(){
         <li class = "nbhead2"><a href="#company"><img class = "icon2" src = "https://res.cloudinary.com/yielddefender/image/upload/q_100/v1495727268/YD_logo_bxbcsu.png" height = "60px" width = "80px"></a>
   <li id = "active2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_HOME.html">HOME</a></li>
   <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_ABOUT.html">ABOUT</a></li>
-  <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">SHOP</a></li>
+  <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">PRODUCTS</a></li>
   <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">COMPANY</a></li>
-  <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">CONTACT</a></li> 
+  <li class = "navbar2"><a href="http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">SUPPORT</a></li> 
     </center>
 </ul>
     
@@ -2102,12 +2048,16 @@ $(document).ready(function(){
     
 <div class = "col-12 h78wrap">
     
-<div class = "h78head">WELCOME TO HANGAR 78</div>
+<div class = "h78head">Yield Defender helps you get the most out of every acre</div>
 <hr>
 <br>
-<div class = "h78content">Valuable resource for real estate agents, farmers/ranchers, search and rescue, mining, oil and gas, forestry and many more...</div>
+<div class = "h78content">Our legacy has been built on providing ag producers an effective and efficient method of increasing yields and maximizing your return on every acre.
+<br><br>
+For over 40 years we have been building purpose built aerial spray planes to help meet the world’s food, fuel, and fiber needs. Being true to our founder's vision of innovation.  We are bringing our expertise of aviation and agriculture into building unmanned aircraft systems (UAS).
+<br><br>
+Yield Defender allows you to make smart data-driven decisions for each of your farms.  Together, we collect and analyze field data, measure performance and build prescriptions.    
+</div>
 <br>
-<hr>
     
     
 </div><!--col-12 h78wrap-->   
@@ -2211,9 +2161,9 @@ $(document).ready(function(){
     
 <a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_ABOUT.html">
     
-<div class = "prevhead1">Want to know more?</div>
+<div class = "prevhead1">About Us</div>
     
-<div class = "prevhead2">ABOUT</div>
+<div class = "prevhead2">About</div>
     
 <div class = "prevpic1"><i class="fa fa-list-alt"></i></div>
     
@@ -2227,9 +2177,9 @@ $(document).ready(function(){
     
 <a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_SHOP.html">
 
-<div class = "prevhead1">Want to explore options?</div>
+<div class = "prevhead1">Explore Options</div>
     
-<div class = "prevhead2">SHOP</div>
+<div class = "prevhead2">Products</div>
     
 <div class = "prevpic1"><i class="fa fa-dollar"></i></div>
     
@@ -2251,9 +2201,9 @@ $(document).ready(function(){
     
     <a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_COMPANY.html">
 
-<div class = "prevhead1">What are we about?</div>
+<div class = "prevhead1">More About YD</div>
     
-<div class = "prevhead2">COMPANY</div>
+<div class = "prevhead2">Company</div>
     
 <div class = "prevpic1"><i class="fa fa-briefcase"></i></div>
     
@@ -2270,9 +2220,9 @@ $(document).ready(function(){
     
 <a class = "lnk" href = "http://htmlpreview.github.io/?https://github.com/willcoleman/willcoleman.github.io/blob/master/YD_TEST_CONTACT.html">
     
-<div class = "prevhead1">Have questions?</div>
+<div class = "prevhead1">Questions & Documents</div>
     
-<div class = "prevhead2">CONTACT</div>
+<div class = "prevhead2">Support</div>
     
 <div class = "prevpic1"><i class="fa fa-envelope"></i></div>
     
